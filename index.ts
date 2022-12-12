@@ -20,7 +20,7 @@ const router = new Router()
     });
   })
   .post("/posts", async (ctx) => {
-    await dispatch({
+    const post = await dispatch({
       type: "CREATE_POST",
       arg: {
         post: {
@@ -30,6 +30,7 @@ const router = new Router()
         userId: "The user Id",
       },
     });
+    console.log("Created post is", post.title);
   })
   .get("/users", async (ctx) => {
     await dispatch({

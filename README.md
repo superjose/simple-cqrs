@@ -1,6 +1,6 @@
 # Start the project
 ```sh
-deno run --allow-net deno.ts
+deno run --allow-net index.ts
 ```
 
 Install Deno [here](https://deno.land)
